@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+}
+.containerupperpart{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px;
+    flex-wrap: wrap;
+}
+.containerlowerpart{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+}
+.containerlowerpart .converter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: -1px -1px 4px blueviolet,
+    1px 1px 8px blueviolet,
+    0 0 8px blueviolet,
+    0 0 8px blueviolet,
+    0 0 8px blueviolet;
+}
+.containerlowerpart .converter .upperpart{
+    margin-top: 8px;
+}
+.containerlowerpart .converter .upperpart .numberclass{
+    height: 32px;
+    width: 178px;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    color: black;
+}  
+.containerlowerpart .converter .upperpart input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.containerlowerpart .converter .upperpart .selectclass{
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    background-color: white;
+}
+.containerlowerpart .converter .midpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    flex-direction: column;
+}
+.containerlowerpart .converter .midpart .btnclass{
+    height: 32px;
+    width: 80px;
+    border: none;
+    border-radius: 2px;
+    outline: 2px solid blueviolet;
+    background-color: white;
+}
+.containerlowerpart .converter .lowerpart{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+.containerlowerpart .converter .lowerpart .ctextclass{
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.containerlowerpart .converter .lowerpart .ktextclass{
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.containerlowerpart .converter .lowerpart .ftextclass{
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+/*Responsive part start*/
+@media screen and (max-width: 600px) {
+    .containerupperpart{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 4px;
+        flex-wrap: wrap;
+    }
+    .containerlowerpart{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        flex-wrap: wrap;
+    }
+    .containerlowerpart .converter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: -1px -1px 4px blueviolet,
+        1px 1px 8px blueviolet,
+        0 0 8px blueviolet,
+        0 0 8px blueviolet,
+        0 0 8px blueviolet;
+        
+    }
+    .containerlowerpart .converter .upperpart .numberclass{
+        height: 32px;
+        width: 190px;
+        border: none;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
+        color: black;
+    }  
+    .containerlowerpart .converter .upperpart input[type="number"]::-webkit-inner-spin-button{
+        display: none;
+    }
+    .containerlowerpart .converter .upperpart .selectclass{
+        height: 32px;
+        border: none;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
+        background-color: white;
+    }
+    .containerlowerpart .converter .midpart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        flex-direction: column;
+    }
+    .containerlowerpart .converter .midpart .btnclass{
+        height: 32px;
+        width: 80px;
+        border: none;
+        border-radius: 2px;
+        background-color: white;
+        outline: 2px solid blueviolet;
+        color: black;
+    }
+    .containerlowerpart .converter .lowerpart{
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+    }
+    .containerlowerpart .converter .lowerpart .ctextclass{
+        height: 32px;
+        border: none;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
+        background-color: white;
+        color: black;
+    }
+    .containerlowerpart .converter .lowerpart .ktextclass{
+        height: 32px;
+        border: none;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
+        background-color: white;
+        color: black;
+    }
+    .containerlowerpart .converter .lowerpart .ftextclass{
+        height: 32px;
+        border: none;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
+        background-color: white;
+        color: black;
+    }
+}
+/* Responsive part end */

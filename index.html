@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- title link -->
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <section class="containerupperpart" id="containerupperpartid">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" onclick="changemode()" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Enable dark Mode</label>
+          </div>
+    </section>
+    <section class="containerlowerpart" id="containerlowerpartid">
+        <section class="converter">
+            <strong>
+                <h1>Temperature Converter</h1>
+            </strong>
+            <section class="upperpart">
+                <input type="number" name="numbername" class="numberclass" id="numberid" inputmode="numeric" placeholder="Enter the number">
+                <select name="selectname" id="selectid" title="converter" class="selectclass">
+                    <option value="celciusvalue" class="opclass">Celcius</option>
+                    <option value="kelvinvalue" class="opclass">Kelvin</option>
+                    <option value="fahrenheitvalue" class="opclass">Fahrenheit</option>
+                </select>
+            </section>
+            <section class="midpart">
+                <button class="btnclass" id="btnnid" onclick="convert()">Convert</button>
+            </section>
+            <section class="lowerpart">
+                <label for="ctextname"><strong>Celcius</strong></label>
+                <input type="celciustext" class="ctextclass" id="ctextid" name="ctextname" disabled>
+                <label for="ktextname"><strong>Kelvin</strong></label>
+                <input type="kelvintext" class="ktextclass" id="ktextid" name="ktextname" disabled>
+                <label for="ftextname"><strong>Fahrenheit</strong></label>
+                <input type="fahrenheittext" class="ftextclass" id="ftextid" name="ftextname" disabled>
+            </section>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
